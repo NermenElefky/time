@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+}
+:root{
+    --body-color:hsl(226, 43%, 10%);
+    --profile-color : hsl(246, 80%, 60%);
+    --main-font-color : #fff;
+    --help-font-color :hsl(236, 100%, 87%);
+    --box-bg-color : hsl(235, 46%, 20%);
+    --li-color:hsl(236deg 100% 87% / 50%);
+    --work-bg: hsl(15, 100%, 70%);
+    --play-bg:hsl(195, 74%, 62%);
+    --study-color:hsl(348, 100%, 68%);
+    --exercise-color:hsl(145, 58%, 55%);
+    --social-color:hsl(246, 80%, 60%);
+    --self-color:hsl(43, 84%, 65%);
+}
+body{
+    width: 100%;
+    min-height: 100dvh;
+    background-color: var(--body-color);
+}
+.parent{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(250px , 1fr));
+    grid-gap: 20px;
+}
+.profile{
+    background-color: var(--box-bg-color);
+    border-radius: 10px;
+    grid-row: 1/3;
+}
+.user-info{
+    background: var(--profile-color);
+    padding: 20px 15px 70px;
+    border-radius: 10px;
+}
+.user-info .user-img{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.user-info img{
+    width: 100%;
+} 
+.user-info .user-name{
+    margin-top: 3rem;
+    font-size: 34px;
+}
+.user-name p {
+    color: var(--help-font-color);
+    font-size: .4em;
+    margin-bottom: 0.2em;
+}
+.user-name h2 {
+    color: var(--main-font-color);
+    font-weight: 300;
+    font-size: 1em;
+}
+.profile .chooces{
+    padding: 25px 15px 30px;
+}
+.chooces ul {
+    list-style: none;
+}
+.chooces ul li{
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: var(--li-color);
+}
+.chooces ul li.active , .chooces ul li:hover {
+    color: var(--main-font-color);
+    cursor: pointer;
+}
+/* start boxes styles */
+.box{
+    border-radius: 10px;
+    overflow: hidden;
+}
+.icon-bg{
+    height: 40px;
+    position: relative;
+}
+.box .icon-bg img{
+    position: absolute;
+    right: 11px;
+    width: 72px;
+    top: -4px;
+}
+.box-info{
+    background-color: var(--box-bg-color);
+    z-index: 2;
+    position: relative;
+    border-radius: 10px;
+    padding: 20px 15px 35px;
+}
+.box-info .box-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.box-head p {
+    color: var(--main-font-color);
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.box-head img {
+    width: 16px;
+}
+.box-body {
+    font-size: 45px;
+}
+.box-body h1{
+    color: var(--main-font-color);
+    font-weight: 300;
+    font-size: 1em;
+}
+.box-body p {
+    font-size: 0.3em;
+    margin-top: 10px;
+    color: var(--help-font-color);
+}
+.box.work .icon-bg{
+    background-color: var(--work-bg);
+}
+.box.play .icon-bg{
+    background-color: var(--play-bg);
+}
+.box.exercise .icon-bg{
+    background-color: var(--exercise-color);
+}
+.box.study .icon-bg{
+    background-color: var(--study-color);
+}
+.box.social .icon-bg{
+    background-color: var(--social-color);
+}
+.box.self .icon-bg{
+    background-color: var(--self-color);
+}
+@media (max-width:1004px) {
+    body{
+        padding: 28px 0px;
+    }
+}
+@media (max-width:667px) {
+    .user-info{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 25px 33px;
+    }
+    .user-info .user-name{
+        margin-top: 0rem;
+        font-size: 28px;
+    }
+    .profile .chooces{
+        padding: 25px 25px 30px;
+    }
+    .chooces ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    .box-body{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 33px;
+    }
+    .box-body p {
+        font-size: .5em;
+    }
+    .box-info{
+        padding: 20px 25px 35px;
+    }
+}
+@media (max-width:450px) {
+    .container{
+        width: 90%;
+    }
+    .user-info .user-name{
+        font-size: 26px;
+    }
+
+}

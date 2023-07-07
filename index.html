@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Time tracking dashboard</title>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- link css file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="parent">
+        <div class="container">
+            <div class="profile">
+                <div class="user-info">
+                    <div class="user-img">
+                        <img src="./images/image-jeremy.png" alt="user photo">
+                    </div>
+                    <div class="user-name">
+                        <p>Report for</p>
+                        <h2>Jeremy Robson</h2>
+                    </div>
+                </div>
+                <div class="chooces">
+                    <ul>
+                        <li data-chooce = "daily">Daily</li>
+                        <li data-chooce="weekly" class="active">weekly</li>
+                        <li data-chooce="monthly">monthly</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box work">
+               <div class="icon-bg">
+                    <img src="./images/icon-work.svg" alt="icon">
+               </div> 
+               <div class="box-info">
+                    <div class="box-head">
+                        <p>work</p>
+                        <img src="./images/icon-ellipsis.svg" alt="more options">
+                    </div>
+                    <div class="box-body">
+                        <h1><span>32</span>hrs</h1>
+                        <p>Last week - <span>36</span>hrs</p>
+                    </div>
+               </div>
+            </div>
+            <div class="box play">
+                <div class="icon-bg">
+                     <img src="./images/icon-play.svg" alt="icon">
+                </div> 
+                <div class="box-info">
+                     <div class="box-head">
+                         <p> Play</p>
+                         <img src="./images/icon-ellipsis.svg" alt="more options">
+                     </div>
+                     <div class="box-body">
+                         <h1><span>10</span>hrs</h1>
+                         <p>Last week - <span>8</span>hrs</p>
+                     </div>
+                </div>
+             </div>
+             <div class="box study">
+                <div class="icon-bg">
+                     <img src="./images/icon-study.svg" alt="icon">
+                </div> 
+                <div class="box-info">
+                     <div class="box-head">
+                         <p>Study</p>
+                         <img src="./images/icon-ellipsis.svg" alt="more options">
+                     </div>
+                     <div class="box-body">
+                         <h1><span>4</span>hrs</h1>
+                         <p>Last week - <span>7</span>hrs</p>
+                     </div>
+                </div>
+             </div>
+             <div class="box exercise">
+                <div class="icon-bg">
+                     <img src="./images/icon-exercise.svg" alt="icon">
+                </div> 
+                <div class="box-info">
+                     <div class="box-head">
+                         <p>Exercise</p>
+                         <img src="./images/icon-ellipsis.svg" alt="more options">
+                     </div>
+                     <div class="box-body">
+                         <h1><span>4</span>hrs</h1>
+                         <p>Last week - <span>5</span>hrs</p>
+                     </div>
+                </div>
+             </div>
+             <div class="box social">
+                <div class="icon-bg">
+                     <img src="./images/icon-social.svg" alt="icon">
+                </div> 
+                <div class="box-info">
+                     <div class="box-head">
+                         <p>Social</p>
+                         <img src="./images/icon-ellipsis.svg" alt="more options">
+                     </div>
+                     <div class="box-body">
+                         <h1><span>5</span>hrs</h1>
+                         <p>Last week - <span>10</span>hrs</p>
+                     </div>
+                </div>
+             </div>
+             <div class="box self">
+                <div class="icon-bg">
+                     <img src="./images/icon-self-care.svg" alt="icon">
+                </div> 
+                <div class="box-info">
+                     <div class="box-head">
+                         <p>Self Care</p>
+                         <img src="./images/icon-ellipsis.svg" alt="more options">
+                     </div>
+                     <div class="box-body">
+                         <h1><span>2</span>hrs</h1>
+                         <p>Last week - <span>2</span>hrs</p>
+                     </div>
+                </div>
+             </div>
+        </div>
+    </div>
+    <!-- link js file -->
+    <script src="app.js"></script>
+</body>
+</html>
